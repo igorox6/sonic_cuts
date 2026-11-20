@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sonic cuts</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; }
+  .tag { color: #555; margin-top: 0; }
+  footer { margin-top: 3rem; color: #666; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>sonic cuts</h1>
+<p class="tag">Turn long videos into short vertical clips, ready to post.</p>
+
+<p>sonic cuts is a self-hosted web app. It transcribes a long video or stream, picks the moments most likely to hold a viewer's attention, cuts them to 9:16, adds word-by-word captions, and can publish the finished clips to the user's own connected accounts, including TikTok.</p>
+
+<h2>How it works</h2>
+<ul>
+  <li>The user runs the app on their own computer or server.</li>
+  <li>The user adds a video link or uploads a file; speech-to-text runs locally.</li>
+  <li>An AI model chosen by the user selects the best moments and writes titles.</li>
+  <li>The user reviews the clips and publishes them to their connected TikTok account.</li>
+</ul>
+
+<h2>TikTok integration</h2>
+<p>The app uses TikTok Login Kit to connect the user's own account and the Content Posting API to publish clips the user has chosen to post. It requests only the <code>user.info.basic</code> and <code>video.publish</code> permissions. The connection can be revoked at any time in TikTok settings.</p>
+
+<h2>Legal</h2>
+<p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></p>
+
+<footer>&copy; 2026 sonic cuts</footer>
+</body>
+</html>
